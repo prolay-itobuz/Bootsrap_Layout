@@ -598,7 +598,7 @@ section.optimize{
 section.solution{
   padding: 98px 333px;
   position: relative;
-  background: url(./assets/images/background/curve.png) no-repeat center/cover;
+  background: url(./assets/images/background/curve.png) no-repeat center/cover ;
   display: flex;
   gap: 48px;
   div.left{
@@ -1052,3 +1052,79 @@ section.three-card{
     }
   }
 }
+
+
+section.choose{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 79px;
+  margin-bottom: 89px;
+  h2{
+    font-size: 55px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 21px;
+    b{
+      font-size: 55px;
+    font-weight: 500;
+    color: #6F77F1;
+    }
+  }
+  p{
+    color: #828282;
+    font-size: 17px;
+    font-weight: 400;
+    width: 902px;
+    margin: auto;
+    margin-bottom: 56px;
+  }
+
+  div.choose-card{
+    display: flex;
+    gap: 35px;
+    margin: auto;
+    width: 1165px;
+
+    div.card{
+      width: 365px;
+      height: 548px;
+      border: none;
+      h4{
+        margin-top: 287px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p{
+        color: #828282;
+        margin: 0;
+        padding: 24px 37px;
+        width: 100%;
+      }
+      button{
+        width:124px;
+        background-color: #FAD725;
+        color: #212528;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 11px 22px;
+        border: none;
+        margin: auto;
+      }
+    }
+    div.card:hover{
+      box-shadow: 1px 4px 4px #898a8b;
+    }
+    div.card:nth-child(1){
+      background: url(./assests/images/background/i.png) no-repeat center/cover ;
+    }
+    div.card:nth-child(2){
+      background: url(./assests/images/background/ii.png) no-repeat center/cover ;
+    }
+    div.card:nth-child(3){
+      background: url(./assests/images/background/iii.png) no-repeat center/cover ;
+    }
+  }
+}
+
+
