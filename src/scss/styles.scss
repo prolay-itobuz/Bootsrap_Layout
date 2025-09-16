@@ -1,6 +1,9 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
-
+@import "mixing";
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -256,7 +259,7 @@ div.cards{
     }
 }
 
-@media(max-width:1600px){
+@media(max-width:1650px){
     div.cards{
         grid-template-columns: repeat(2,1fr);
         div.card{
@@ -279,6 +282,7 @@ div.cards{
 @media(max-width:450px){
     div.cards{
         grid-template-columns: repeat(1,1fr);
+        margin-bottom: 40px;
         div.card{
             width: 100%;
             height: auto;
@@ -288,4 +292,88 @@ div.cards{
             }
         }
     }
+}
+
+
+section.optimize{
+  max-width: 1665px;
+  margin: auto;
+  margin-bottom: 233px;
+  h2{
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 37px;
+    b{
+      color: #6F77F1;
+      font-weight: 500;
+    }
+  }
+  p{
+    color: #727272;
+    font-size: 20px;
+    width: 827px;
+    margin-bottom: 65px;
+  }
+  div.item-row{
+    gap: 22px;
+    display: flex;
+    div.item{
+      height: 472px;
+      padding: 56px 44px 0px 34px;
+      img{
+        margin-bottom: 91px;
+      }
+      h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 21px;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    div.item:first-child{
+      background: url(./assests/images/background/one.png);
+    }
+    div.item:nth-child(2){
+      background: url(./assests/images/background/two.png);
+    }
+    div.item:nth-child(3){
+      background: url(./assests/images/background/three.png);
+    }
+    div.item:nth-child(4){
+      background: url(./assests/images/background/four.png);
+      @include image;
+    }
+    div.item:hover{
+      border-bottom: 4px solid #717AE0;
+    }
+  }
+}
+
+@media(max-width:1700px){
+  section.optimize{
+  padding: 0 20px;
+  // width: 100%;
+  // // h2{
+  // //   font-size: 30px;
+  // // }
+  // // p{
+  // //   width: auto;
+  // //   font-size: 16px;
+  // //   margin-bottom: 20px;
+  // // }
+  // div.item-row{
+    
+  //   gap: 22px;
+  //   div.item{
+  //     box-shadow: 1px 4px 4px #0000002b;
+  //     width: 300px;
+  //     padding: 1% 0px 0px 2% ;
+  //     img{
+  //       margin-bottom: 91px;
+  //     }
+  //   }
+  // }
+}
 }
