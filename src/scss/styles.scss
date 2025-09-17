@@ -1,7 +1,7 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
 @import "mixing";
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -204,160 +204,159 @@ body {
 
 @media (max-width: 475px) {
   .container {
-    div.col{
-        div.bottom{
-            img{
-                display: none;
-            }
-            button{
-                padding: 2%;
-            }
+    div.col {
+      div.bottom {
+        img {
+          display: none;
         }
+        button {
+          padding: 2%;
+        }
+      }
     }
   }
 }
 
-div.cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 15px;
-    gap: 63px;
-      max-width: 1665px;
-      margin: auto;
-      margin-bottom: 170px;
-    div.card{
-        padding: 3%;
-        border: none;
-        box-shadow: 1px 4px 4px #0000002b;
-        height: 334px;
-        width: 513px;
-        div.grp{
-            display: flex;
-            gap: 26px;
-            align-items: center;
-            margin-bottom: 20px;
-            h5{
-                font-size: 28px;
-                width: 250px;
-            }
-            img{
-              width: 120px;
-            }
-        }
-        p{
-            color: #828282;
-            font-size: 17px;
-            font-weight: 400;
-        }
-        a{
-            display: block;
-            text-align: end;
-            color: #212528;
-            margin-top: 30px;
-            align-self: flex-end;
-        }
+div.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+  gap: 63px;
+  max-width: 1665px;
+  margin: auto;
+  margin-bottom: 170px;
+  div.card {
+    padding: 3%;
+    border: none;
+    box-shadow: 1px 4px 4px #0000002b;
+    height: 334px;
+    width: 513px;
+    div.grp {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+      margin-bottom: 20px;
+      h5 {
+        font-size: 28px;
+        width: 250px;
+      }
+      img {
+        width: 120px;
+      }
     }
+    p {
+      color: #828282;
+      font-size: 17px;
+      font-weight: 400;
+    }
+    a {
+      display: block;
+      text-align: end;
+      color: #212528;
+      margin-top: 30px;
+      align-self: flex-end;
+    }
+  }
 }
 
-@media(max-width:1650px){
-    div.cards{
-      gap: 10px;
-        // grid-template-columns: repeat(2,1fr);
-        div.card{
-            width: 100%;
-            height: auto;
-            div.grp{
-              flex-direction: column;
-              align-items: start;
-              h5{
-                width: 100%;
-              }
-            }
+@media (max-width: 1650px) {
+  div.cards {
+    gap: 10px;
+    // grid-template-columns: repeat(2,1fr);
+    div.card {
+      width: 100%;
+      height: auto;
+      div.grp {
+        flex-direction: column;
+        align-items: start;
+        h5 {
+          width: 100%;
         }
+      }
     }
+  }
 }
 
-@media(max-width:1260px){
-    div.cards{
-        grid-template-columns: repeat(1,1fr);
-        div.card{
-            width: 100%;
-            height: auto;
-        }
+@media (max-width: 1260px) {
+  div.cards {
+    grid-template-columns: repeat(1, 1fr);
+    div.card {
+      width: 100%;
+      height: auto;
     }
+  }
 }
 
-@media(max-width:450px){
-    div.cards{
-        grid-template-columns: repeat(1,1fr);
-        margin-bottom: 40px;
-        div.card{
-            width: 100%;
-            height: auto;
-            div.grp{
-              flex-direction: column !important;
-              align-items: start;
-            }
-        }
+@media (max-width: 450px) {
+  div.cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+    div.card {
+      width: 100%;
+      height: auto;
+      div.grp {
+        flex-direction: column !important;
+        align-items: start;
+      }
     }
+  }
 }
 
-
-section.optimize{
+section.optimize {
   max-width: 1665px;
   margin: auto;
   margin-bottom: 194px;
-  h2{
+  h2 {
     font-size: 55px;
     font-weight: 500;
     margin-bottom: 37px;
-    b{
-      color: #6F77F1;
+    b {
+      color: #6f77f1;
       font-weight: 500;
     }
   }
-  p{
+  p {
     color: #727272;
     font-size: 20px;
     width: 827px;
     margin-bottom: 65px;
   }
-  div.item-row{
+  div.item-row {
     gap: 22px;
     display: flex;
-    div.item{
+    div.item {
       height: 472px;
       padding: 56px 44px 0px 34px;
-      img{
+      img {
         margin-bottom: 91px;
       }
-      h3{
+      h3 {
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 21px;
       }
-      p{
+      p {
         width: 100%;
       }
     }
-    div.item:hover{
+    div.item:hover {
       box-shadow: 1px 4px 4px #0000002b;
     }
-    div.item:first-child{
+    div.item:first-child {
       background: url(./assests/images/background/one.png);
     }
-    div.item:nth-child(2){
+    div.item:nth-child(2) {
       background: url(./assests/images/background/two.png);
     }
-    div.item:nth-child(3){
+    div.item:nth-child(3) {
       background: url(./assests/images/background/three.png);
     }
-    div.item:nth-child(4){
+    div.item:nth-child(4) {
       background: url(./assests/images/background/four.png);
       @include image;
     }
-    div.item:hover{
-      border-bottom: 4px solid #717AE0;
+    div.item:hover {
+      border-bottom: 4px solid #717ae0;
     }
   }
 }
@@ -367,7 +366,7 @@ section.optimize{
   section.optimize {
     max-width: 90%;
     margin-bottom: 180px;
-    
+
     p {
       width: 90%;
     }
@@ -377,24 +376,24 @@ section.optimize{
 @media (max-width: 1440px) {
   section.optimize {
     margin-bottom: 150px;
-    
+
     h2 {
       font-size: 48px;
     }
-    
+
     p {
       font-size: 18px;
     }
-    
+
     div.item-row {
       div.item {
         height: 420px;
         padding: 45px 35px 0 25px;
-        
+
         img {
           margin-bottom: 70px;
         }
-        
+
         h3 {
           font-size: 22px;
         }
@@ -406,21 +405,21 @@ section.optimize{
 @media (max-width: 1200px) {
   section.optimize {
     margin-bottom: 120px;
-    
+
     h2 {
       font-size: 42px;
       margin-bottom: 30px;
     }
-    
+
     p {
       font-size: 17px;
       margin-bottom: 50px;
     }
-    
+
     div.item-row {
       flex-wrap: wrap;
       justify-content: center;
-      
+
       div.item {
         width: calc(50% - 22px);
         height: auto;
@@ -438,31 +437,31 @@ section.optimize{
 @media (max-width: 992px) {
   section.optimize {
     margin-bottom: 100px;
-    
+
     h2 {
       font-size: 36px;
     }
-    
+
     p {
       width: 100%;
       font-size: 16px;
     }
-    
+
     div.item-row {
       div.item {
         min-height: 340px;
         padding: 35px 25px 25px 20px;
-        
+
         img {
           margin-bottom: 40px;
           width: 60px;
           height: auto;
         }
-        
+
         h3 {
           font-size: 20px;
         }
-        
+
         p {
           font-size: 15px;
         }
@@ -474,28 +473,28 @@ section.optimize{
 @media (max-width: 768px) {
   section.optimize {
     margin-bottom: 80px;
-    
+
     h2 {
       font-size: 32px;
       margin-bottom: 25px;
     }
-    
+
     p {
       margin-bottom: 40px;
     }
-    
+
     div.item-row {
       gap: 15px;
-      
+
       div.item {
         width: 100%;
         min-height: 300px;
         padding: 30px 20px 20px 20px;
-        
+
         img {
           margin-bottom: 30px;
         }
-        
+
         h3 {
           margin-bottom: 15px;
         }
@@ -507,29 +506,29 @@ section.optimize{
 @media (max-width: 576px) {
   section.optimize {
     margin-bottom: 60px;
-    
+
     h2 {
       font-size: 28px;
     }
-    
+
     p {
       font-size: 15px;
     }
-    
+
     div.item-row {
       div.item {
         min-height: 280px;
         padding: 25px 15px 15px 15px;
-        
+
         img {
           width: 50px;
           margin-bottom: 25px;
         }
-        
+
         h3 {
           font-size: 18px;
         }
-        
+
         p {
           font-size: 14px;
         }
@@ -541,26 +540,26 @@ section.optimize{
 @media (max-width: 400px) {
   section.optimize {
     margin-bottom: 50px;
-    
+
     h2 {
       font-size: 24px;
     }
-    
+
     div.item-row {
       div.item {
         min-height: 250px;
         padding: 20px 15px 15px 15px;
-        
+
         img {
           width: 45px;
           margin-bottom: 20px;
         }
-        
+
         h3 {
           font-size: 16px;
           margin-bottom: 12px;
         }
-        
+
         p {
           font-size: 13px;
         }
@@ -572,30 +571,30 @@ section.optimize{
 @media (max-width: 320px) {
   section.optimize {
     margin-bottom: 40px;
-    
+
     h2 {
       font-size: 22px;
     }
-    
+
     p {
       font-size: 14px;
       margin-bottom: 30px;
     }
-    
+
     div.item-row {
       div.item {
         min-height: 230px;
         padding: 15px 10px 10px 10px;
-        
+
         img {
           width: 40px;
           margin-bottom: 15px;
         }
-        
+
         h3 {
           font-size: 15px;
         }
-        
+
         p {
           font-size: 12px;
         }
@@ -604,35 +603,33 @@ section.optimize{
   }
 }
 
-
-
-section.solution{
+section.solution {
   padding: 98px 333px;
   position: relative;
-  background: url(./assests/images/background/curve.png) no-repeat center/cover ;
+  background: url(./assests/images/background/curve.png) no-repeat center/cover;
   display: flex;
   gap: 48px;
-  div.left{
+  div.left {
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     display: flex;
-    h2{
+    h2 {
       font-size: 55px;
       font-weight: 500;
 
-      b{
+      b {
         font-size: 55px;
         font-weight: 500;
-        color: #6F77F1;
+        color: #6f77f1;
       }
     }
-    p{
+    p {
       font-size: 17px;
       color: #828282;
       margin-bottom: 14px;
     }
-    button{
-      background-color: #FAD725;
+    button {
+      background-color: #fad725;
       color: #212528;
       padding: 20px 40px;
       width: 214px;
@@ -642,7 +639,6 @@ section.solution{
     }
   }
 }
-
 
 /* Media Queries for Solution Section */
 @media (max-width: 1750px) {
@@ -655,20 +651,20 @@ section.solution{
 @media (max-width: 1440px) {
   section.solution {
     padding: 70px 150px;
-    
+
     div.left {
       h2 {
         font-size: 48px;
-        
+
         b {
           font-size: 48px;
         }
       }
-      
+
       p {
         font-size: 16px;
       }
-      
+
       button {
         padding: 18px 35px;
         width: 200px;
@@ -682,23 +678,23 @@ section.solution{
   section.solution {
     padding: 60px 100px;
     gap: 35px;
-    
+
     div.left {
       h2 {
         font-size: 42px;
-        
+
         b {
           font-size: 42px;
         }
       }
-      
+
       button {
         padding: 16px 30px;
         width: 180px;
         font-size: 20px;
       }
     }
-    
+
     div.right img {
       width: 100%;
       height: auto;
@@ -711,20 +707,20 @@ section.solution{
     padding: 50px 60px;
     flex-direction: column;
     text-align: center;
-    
+
     div.left {
       h2 {
         font-size: 38px;
-        
+
         b {
           font-size: 38px;
         }
       }
-      
+
       p {
         font-size: 15px;
       }
-      
+
       button {
         margin: 0 auto;
         padding: 15px 25px;
@@ -739,16 +735,16 @@ section.solution{
   section.solution {
     padding: 40px 40px;
     gap: 30px;
-    
+
     div.left {
       h2 {
         font-size: 32px;
-        
+
         b {
           font-size: 32px;
         }
       }
-      
+
       button {
         padding: 14px 22px;
         width: 160px;
@@ -761,20 +757,20 @@ section.solution{
 @media (max-width: 576px) {
   section.solution {
     padding: 30px 20px;
-    
+
     div.left {
       h2 {
         font-size: 28px;
-        
+
         b {
           font-size: 28px;
         }
       }
-      
+
       p {
         font-size: 14px;
       }
-      
+
       button {
         padding: 12px 20px;
         width: 150px;
@@ -787,16 +783,16 @@ section.solution{
 @media (max-width: 400px) {
   section.solution {
     padding: 25px 15px;
-    
+
     div.left {
       h2 {
         font-size: 24px;
-        
+
         b {
           font-size: 24px;
         }
       }
-      
+
       button {
         padding: 10px 18px;
         width: 140px;
@@ -809,21 +805,21 @@ section.solution{
 @media (max-width: 320px) {
   section.solution {
     padding: 20px 10px;
-    
+
     div.left {
       h2 {
         font-size: 22px;
-        
+
         b {
           font-size: 22px;
         }
       }
-      
+
       p {
         font-size: 13px;
         margin-bottom: 10px;
       }
-      
+
       button {
         padding: 8px 16px;
         width: 130px;
@@ -833,33 +829,36 @@ section.solution{
   }
 }
 
-section.three-card{
+section.three-card {
   display: flex;
   padding: 100px 330px 84px 330px;
   gap: 75px;
-  div.card-item{
+  div.card-item {
     width: 370px;
     height: 289px;
     padding: 34px 48px 26px 30px;
-    img{
+    img {
       margin-bottom: 22px;
     }
-    h3{
+    h3 {
       margin-bottom: 17px;
       font-size: 22px;
       font-weight: 500;
     }
-    p{
+    p {
       margin-bottom: 11px;
       font-size: 17px;
       font-weight: 400;
     }
-    a{
+    a {
       text-decoration: none;
-      color: #6F77F1;
+      color: #6f77f1;
       font-weight: 500;
       font-size: 14px;
     }
+  }
+  div.card-item:hover{
+    box-shadow: 1px 4px 4px #0000002b;
   }
 }
 
@@ -875,27 +874,27 @@ section.three-card{
   section.three-card {
     padding: 70px 150px 60px 150px;
     gap: 50px;
-    
+
     div.card-item {
       width: 330px;
       height: 270px;
       padding: 30px 40px 22px 25px;
-      
+
       img {
         margin-bottom: 20px;
         width: 50px;
       }
-      
+
       h3 {
         font-size: 20px;
         margin-bottom: 15px;
       }
-      
+
       p {
         font-size: 16px;
         margin-bottom: 10px;
       }
-      
+
       a {
         font-size: 13px;
       }
@@ -907,22 +906,22 @@ section.three-card{
   section.three-card {
     padding: 60px 100px 50px 100px;
     gap: 40px;
-    
+
     div.card-item {
       width: 300px;
       height: 250px;
       padding: 25px 35px 20px 20px;
-      
+
       img {
         margin-bottom: 18px;
         width: 45px;
       }
-      
+
       h3 {
         font-size: 19px;
         margin-bottom: 14px;
       }
-      
+
       p {
         font-size: 15px;
       }
@@ -936,12 +935,13 @@ section.three-card{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    
+
     div.card-item {
       width: calc(50% - 30px);
       max-width: 350px;
       height: auto;
       min-height: 230px;
+      box-shadow: 1px 4px 4px #0000002b;
     }
   }
 }
@@ -949,28 +949,28 @@ section.three-card{
 @media (max-width: 768px) {
   section.three-card {
     padding: 40px 40px 30px 40px;
-    
+
     div.card-item {
       width: 100%;
       max-width: 400px;
       min-height: 210px;
       padding: 20px 25px 15px 20px;
-      
+
       img {
         margin-bottom: 15px;
         width: 40px;
       }
-      
+
       h3 {
         font-size: 18px;
         margin-bottom: 12px;
       }
-      
+
       p {
         font-size: 14px;
         margin-bottom: 8px;
       }
-      
+
       a {
         font-size: 12px;
       }
@@ -982,21 +982,21 @@ section.three-card{
   section.three-card {
     padding: 30px 20px 25px 20px;
     gap: 25px;
-    
+
     div.card-item {
       padding: 18px 20px 12px 18px;
       min-height: 190px;
-      
+
       img {
         width: 35px;
         margin-bottom: 12px;
       }
-      
+
       h3 {
         font-size: 17px;
         margin-bottom: 10px;
       }
-      
+
       p {
         font-size: 13px;
       }
@@ -1008,25 +1008,25 @@ section.three-card{
   section.three-card {
     padding: 25px 15px 20px 15px;
     gap: 20px;
-    
+
     div.card-item {
       padding: 15px 15px 10px 15px;
       min-height: 170px;
-      
+
       img {
         width: 30px;
         margin-bottom: 10px;
       }
-      
+
       h3 {
         font-size: 16px;
         margin-bottom: 8px;
       }
-      
+
       p {
         font-size: 12px;
       }
-      
+
       a {
         font-size: 11px;
       }
@@ -1037,26 +1037,26 @@ section.three-card{
 @media (max-width: 320px) {
   section.three-card {
     padding: 20px 10px 15px 10px;
-    
+
     div.card-item {
       padding: 12px 12px 8px 12px;
       min-height: 160px;
-      
+
       img {
         width: 28px;
         margin-bottom: 8px;
       }
-      
+
       h3 {
         font-size: 15px;
         margin-bottom: 7px;
       }
-      
+
       p {
         font-size: 11px;
         margin-bottom: 6px;
       }
-      
+
       a {
         font-size: 10px;
       }
@@ -1064,26 +1064,25 @@ section.three-card{
   }
 }
 
-
-section.choose{
+section.choose {
   text-align: center;
   display: flex;
   flex-direction: column;
   padding-top: 79px;
   padding-bottom: 89px;
-  background-color: #FAFAFA;
-  h2{
+  background-color: #FFFFFF;
+  h2 {
     font-size: 55px;
     font-weight: 500;
     width: 100%;
     margin-bottom: 21px;
-    b{
+    b {
       font-size: 55px;
-    font-weight: 500;
-    color: #6F77F1;
+      font-weight: 500;
+      color: #6f77f1;
     }
   }
-  p{
+  p {
     color: #828282;
     font-size: 17px;
     font-weight: 400;
@@ -1092,31 +1091,31 @@ section.choose{
     margin-bottom: 56px;
   }
 
-  div.choose-card{
+  div.choose-card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     margin: auto;
     width: 1165px;
 
-    div.card{
+    div.card {
       width: 365px;
       height: 548px;
       border: none;
-      h4{
+      h4 {
         margin-top: 287px;
         font-size: 20px;
         font-weight: 500;
       }
-      p{
+      p {
         color: #828282;
         margin: 0;
         padding: 24px 37px;
         width: 100%;
       }
-      button{
-        width:124px;
-        background-color: #FAD725;
+      button {
+        width: 124px;
+        background-color: #fad725;
         color: #212528;
         font-size: 14px;
         font-weight: 500;
@@ -1125,66 +1124,407 @@ section.choose{
         margin: auto;
       }
     }
-    div.card:hover{
+    div.card:hover {
       box-shadow: 1px 4px 4px #898a8b;
     }
-    div.card:nth-child(1){
-      background: url(./assests/images/background/i.png) no-repeat center/cover ;
+    div.card:nth-child(1) {
+      background: url(./assests/images/background/i.png) no-repeat center/cover;
     }
-    div.card:nth-child(2){
-      background: url(./assests/images/background/ii.png) no-repeat center/cover ;
+    div.card:nth-child(2) {
+      background: url(./assests/images/background/ii.png) no-repeat center/cover;
     }
-    div.card:nth-child(3){
-      background: url(./assests/images/background/iii.png) no-repeat center/cover ;
+    div.card:nth-child(3) {
+      background: url(./assests/images/background/iii.png) no-repeat
+        center/cover;
     }
   }
 }
 
+@media (max-width: 1200px) {
+  section.choose {
+    padding: 15px;
+    div.choose-card {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      div.card {
+        width: 100%;
+        margin: auto;
+        box-shadow: 1px 4px 4px #898a8b;
+        background-size: contain !important;
+        background-position: 50% 30% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section.choose {
+    padding: 15px;
+    h2 {
+      font-size: 35px;
+      b {
+        font-size: 35px;
+      }
+    }
+    p {
+      width: 100%;
+      font-size: 16px;
+    }
+    div.choose-card {
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      div.card {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        background-size: contain !important;
+        h4 {
+          margin-top: 200px;
+        }
+        button {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+section.need {
+  display: flex;
+  max-width: 1646px;
+  gap: 121px;
+  margin: auto;
+  margin-top: 114px;
+  margin-bottom: 97px;
+  div.left {
+    width: 771px;
+    align-self: center;
+    img {
+      width: 100%;
+    }
+  }
+  div.right {
+    width: 754px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 55px;
+      font-weight: 500;
+      margin-bottom: 36px;
+      b {
+        font-size: 55px;
+        font-weight: 500;
+        color: #6f77f1;
+      }
+    }
+    p {
+      font-size: 17px;
+      color: #828282;
+      margin-bottom: 78px;
+    }
+    div.cards-need {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      gap: 51px;
+      padding: 0%;
+      div.card-need {
+        display: flex;
+        width: 638px;
+        box-shadow: none;
+        height: auto;
+        flex-direction: row;
+        padding: 16px 45px;
+        gap: 28px;
+        text-align: left;
+        img {
+          width: 101px;
+          height: 101px;
+          aspect-ratio: 1;
+        }
+        div.grp {
+          display: flex;
+          width: 419px;
+          height: auto;
+          margin: 0;
+          gap: 8px;
+          flex-direction: column;
+          h3 {
+            width: 100%;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+      div.card-need:hover {
+        box-shadow: 1px 4px 4px #0000002b;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  section.need {
+    gap: 20px !important;
+    div.left {
+      width: 600px !important;
+      align-self: center;
+      
+      img {
+        width: 100%;
+      }
+    }
+    div.right{
+      h2{
+      font-size: 45px !important;
+      b{
+        font-size: 45px;
+      }
+    }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section.need {
+    gap: 20px !important;
+    flex-direction: column;
+    div.left {
+      display: none;
+    }
+    div.right{
+      width: 90%;
+      margin: auto;
+      h2{
+      font-size: 45px !important;
+      b{
+        font-size: 45px;
+      }
+    }
+    div.cards-need {
+      width: 100%;
+      div.card-need{
+        width: 100%;
+        box-shadow: 1px 4px 4px #0000002b;
+        div.grp{
+          width: 100%;
+        }
+      }
+    }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  section.need {
+    div.right{
+      h2{
+      font-size: 30px !important;
+      b{
+        font-size: 30px;
+      }
+    }
+    div.cards-need {
+      
+      div.card-need{
+        flex-direction: column;
+        padding: 7%;
+      }
+    }
+    }
+  }
+}
+
+
+div.analytics{
+  max-width: 1165px;
+  height: 201px;
+  width: 95%;
+  margin: auto;
+  padding: 54px 65px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  margin-bottom: 87px;
+  div.nums{
+    display: flex;
+    flex-direction: column;
+    width: 172px;
+    text-align: center;
+    h3{
+      font-size: 73px;
+      font-weight: 600;
+      color: #666565;
+      line-height: 57px;
+      text-align: center;
+      margin: 0;
+    }
+    p{
+      font-size: 17px;
+      font-weight: 500;
+      color: #6F6F6F;
+    }
+  }
+  span{
+    width: 14px;
+    border-radius: 100%;
+    background-color: #D1563B;
+    margin: auto;
+    aspect-ratio: 1;
+  }
+}
+
+@media(max-width:1050px){
+div.analytics{
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  height: auto;
+  span.green{
+    display: none;
+  }
+  div.nums{
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+}
+
+@media(max-width:650px){
+div.analytics{
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  span.green{
+    display: block;
+  }
+  div.nums{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 0px;
+  }
+}
+}
+
+section.contact{
+  max-width: 1564px;
+  width: 95%;
+  display: flex;
+  gap: 15px;
+  margin: auto;
+  margin-bottom: 9px;
+  div.one{
+  //  align-items: center; 
+   width: 754px;
+   padding-top: 162px;
+   h3{
+    font-size: 55px;
+    font-weight: 500;
+    color: #212528;
+    b{
+      font-size: 55px;
+    font-weight: 500;
+    color: #6F77F1;
+    }
+   }
+   p{
+    color: #828282;
+    font-size: 17px;
+    font-weight: 400;
+    width: 693px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+   }
+   div.group{
+    width: 577px;
+    display: flex;
+    input{
+      width: 288px;
+      padding: 13px 23px;
+      border: 1px solid #DFDFDF;
+      background-color: #F2F2F2;
+    }
+    input::placeholder{
+      color: #B6B6B6;
+      font-size: 17px;
+    }
+    button{
+      margin-left: 36px;
+      background-color: #FAD725;
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+      width: 115px;
+      padding: 14px 28px;
+    }
+   }
+  }
+  div.two{
+    width: 795px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width:1700px){
+section.contact{
+  div.one{
+    padding-top: 0;
+    margin: auto auto;
+  }
+  div.two{
+    margin-bottom: 50px;
+  }
+}
+}
 
 @media(max-width:1200px){
-section.choose{
-  padding: 15px;
-  div.choose-card{
-    grid-template-columns: repeat(2,1fr);
+section.contact{
+  div.one{
+    margin-bottom: 100px;
     width: 100%;
-    div.card{
-      width: 100%;
-      margin: auto;
-      box-shadow: 1px 4px 4px #898a8b;
-      background-size: contain !important;
-      background-position: 50% 30% !important;
+    h3{
+      font-size: 45px;
+      b{
+        font-size: 45px;
+      }
     }
+    p{
+      width: 100%;
+    }
+  }
+  div.two{
+    display: none;
   }
 }
 }
 
-@media(max-width:900px){
-section.choose{
-  padding: 15px;
-  h2{
-    font-size: 35px;
-    b{
+@media(max-width:678px){
+section.contact{
+  div.one{
+    h3{
       font-size: 35px;
+      b{
+        font-size: 35px;
+      }
     }
-  }
-  p{
-    width: 100%;
-    font-size: 16px;
-  }
-  div.choose-card{
-    gap: 10px;
-    grid-template-columns: repeat(1,1fr);
-    width: 100%;
-    div.card{
-      margin: auto;
-      height: auto;
+    p{
+      font-size: 16px;
+    }
+    div.group{
+      flex-direction: column;
       width: 100%;
-      background-size: contain !important;
-      h4{
-        margin-top: 200px;
+      gap: 10px;
+      input{
+        width: 100%;
       }
       button{
-        margin-bottom: 10px;
+        margin: 0;
       }
     }
   }
