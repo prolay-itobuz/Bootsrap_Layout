@@ -1,5 +1,10 @@
-@mixin image{
-       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+@mixin image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@mixin heading {
+  font-size: 55px;
+  font-weight: 500;
 }
