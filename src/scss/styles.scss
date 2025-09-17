@@ -204,7 +204,12 @@ body {
 
 @media (max-width: 475px) {
   .container {
+    
     div.col {
+      h1{
+      font-size: 40px;
+      margin-top: 25px;
+    }
       div.bottom {
         img {
           display: none;
