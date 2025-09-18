@@ -1,0 +1,119 @@
+section.teams {
+  padding-top: 78px;
+  padding-bottom: 170px;
+  h2 {
+    @include heading;
+    text-align: center;
+    margin-bottom: 21px;
+    b {
+      @include heading;
+      color: #6f77f1;
+    }
+  }
+  p {
+    width: 662px;
+    color: #828282;
+    font-size: 17px;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  div.members {
+    width: 100%;
+    max-width: 1166px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    div.member {
+      width: 269px;
+      height: 339px;
+      border: 1px solid #efefef;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 131px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 53px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        color: #212528;
+        margin: 0;
+      }
+      h4:hover {
+        color: #6f77f1;
+        cursor: pointer;
+      }
+      p {
+        width: 100%;
+        color: #a3a2a2;
+        font-size: 15px;
+        margin: 0;
+        margin-bottom: 22px;
+      }
+      div.social {
+        width: 195px;
+        margin: auto;
+        display: flex;
+        margin-bottom: 44px;
+        justify-content: space-between;
+        a {
+          color: #828282;
+          width: 24px;
+          i {
+            width: 100% !important;
+          }
+        }
+        a:hover {
+          color: #6f77f1;
+        }
+      }
+    }
+    div.member:hover {
+      box-shadow: 1px 4px 4px #0000002b;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section.teams {
+    div.members {
+      width: 95%;
+      margin: auto;
+      grid-template-columns: repeat(2, 1fr);
+      div.member {
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  section.teams {
+    padding-bottom: 10%;
+    h2 {
+      font-size: 35px;
+      b {
+        font-size: 35px;
+      }
+    }
+    p {
+      width: 95%;
+    }
+    div.members {
+      width: 95%;
+      margin: auto;
+      grid-template-columns: repeat(1, 1fr);
+      div.member {
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}

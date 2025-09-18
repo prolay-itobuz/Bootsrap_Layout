@@ -1,0 +1,126 @@
+section.choose {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 79px;
+  padding-bottom: 89px;
+  background-color: #fafafa;
+  h2 {
+    @include heading;
+    width: 100%;
+    margin-bottom: 21px;
+    b {
+      @include heading;
+      color: #6f77f1;
+    }
+  }
+  p {
+    color: #828282;
+    font-size: 17px;
+    font-weight: 400;
+    width: 902px;
+    margin: auto;
+    margin-bottom: 56px;
+  }
+
+  div.choose-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin: auto;
+    width: 1165px;
+
+    div.card {
+      width: 365px;
+      height: 548px;
+      border: none;
+      h4 {
+        margin-top: 287px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p {
+        color: #828282;
+        margin: 0;
+        padding: 24px 37px;
+        width: 100%;
+      }
+      button {
+        width: 124px;
+        background-color: #fad725;
+        color: #212528;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 11px 22px;
+        border: none;
+        margin: auto;
+      }
+    }
+    div.card:hover {
+      box-shadow: 1px 4px 4px #898a8b;
+    }
+    div.card:nth-child(1) {
+      background: url(./assests/images/background/i.png) no-repeat center/cover,
+        #ffffff;
+    }
+    div.card:nth-child(2) {
+      background: url(./assests/images/background/ii.png) no-repeat center/cover,
+        #ffffff;
+    }
+    div.card:nth-child(3) {
+      background: url(./assests/images/background/iii.png) no-repeat
+          center/cover,
+        #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section.choose {
+    padding: 15px;
+    div.choose-card {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      div.card {
+        width: 100%;
+        margin: auto;
+        box-shadow: 1px 4px 4px #898a8b;
+        background-size: contain !important;
+        background-position: 50% 30% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section.choose {
+    padding: 15px;
+    h2 {
+      font-size: 35px;
+      b {
+        font-size: 35px;
+      }
+    }
+    p {
+      width: 100%;
+      font-size: 16px;
+    }
+    div.choose-card {
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      div.card {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        background-size: contain !important;
+        h4 {
+          margin-top: 200px;
+        }
+        button {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

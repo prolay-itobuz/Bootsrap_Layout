@@ -1,0 +1,139 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+@import "mixing";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+}
+
+
+.texture {
+  position: absolute;
+}
+.green1 {
+  top: 214px;
+  left: 25px;
+  width: 20px;
+}
+.green2 {
+  left: 66px;
+  width: 28px;
+  top: 4593px;
+}
+.green3 {
+  width: 28px;
+  right: 193.29px;
+  top: 6285px;
+}
+.green4 {
+  width: 28px;
+  left: 482px;
+  bottom: 2375px;
+}
+
+.blue1 {
+  width: 28px;
+  top: 920px;
+  left: 768px;
+}
+
+.blue2 {
+  width: 28px;
+  right: 174.38px;
+  top: 3108px;
+}
+
+.blue3 {
+  width: 28px;
+  left: 519px;
+  top: 3510px;
+}
+
+.blue4 {
+  right: 101.38px;
+  width: 28px;
+  bottom: 3759px;
+}
+
+.blue5 {
+  width: 25px;
+  left: 212px;
+  bottom: 3036px;
+}
+
+.blue6 {
+  width: 25px;
+  right: 142px;
+  bottom: 1660px;
+}
+
+.big {
+  width: 114px;
+  left: 110px;
+  top: 300px;
+}
+
+.small1 {
+  width: 15px;
+  top: 213px;
+  left: 902px;
+}
+
+.small2 {
+  width: 15px;
+  left: 688px;
+  top: 3169px;
+}
+
+.small3 {
+  width: 15px;
+  left: 677px;
+  top: 5239px;
+}
+
+.small4 {
+  width: 15px;
+  left: 223px;
+  top: 5835px;
+}
+
+.small5 {
+  width: 15px;
+  right: 193px;
+  bottom: 2475px;
+}
+
+.small6 {
+  width: 15px;
+  left: 293px;
+  bottom: 1450px;
+}
+
+@media (max-width: 1300px) {
+  .texture {
+    display: none;
+  }
+}
+
+
+@import "nav";
+@import "hero";
+@import "first_cards";
+@import "optimize";
+@import "solution";
+@import "second-cards";
+@import "choose-us";
+@import "need";
+@import "analytics";
+@import "contact";
+@import "plans";
+@import "teams";
+@import "success";
+@import "subscribe";
+@import "footer";

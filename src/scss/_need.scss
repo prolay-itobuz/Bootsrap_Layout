@@ -1,0 +1,143 @@
+section.need {
+  display: flex;
+  max-width: 1646px;
+  gap: 121px;
+  margin: auto;
+  margin-top: 114px;
+  margin-bottom: 97px;
+  div.left {
+    width: 771px;
+    align-self: center;
+    img {
+      width: 100%;
+    }
+  }
+  div.right {
+    width: 754px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      @include heading;
+      margin-bottom: 36px;
+      b {
+        @include heading;
+        color: #6f77f1;
+      }
+    }
+    p {
+      font-size: 17px;
+      color: #828282;
+      margin-bottom: 78px;
+    }
+    div.cards-need {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      gap: 51px;
+      padding: 0%;
+      div.card-need {
+        display: flex;
+        width: 638px;
+        box-shadow: none;
+        height: auto;
+        flex-direction: row;
+        padding: 16px 45px;
+        gap: 28px;
+        text-align: left;
+        img {
+          width: 101px;
+          height: 101px;
+          aspect-ratio: 1;
+        }
+        div.grp {
+          display: flex;
+          width: 419px;
+          height: auto;
+          margin: 0;
+          gap: 8px;
+          flex-direction: column;
+          h3 {
+            width: 100%;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+      div.card-need:hover {
+        box-shadow: 1px 4px 4px #0000002b;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  section.need {
+    gap: 20px !important;
+    div.left {
+      width: 600px !important;
+      align-self: center;
+
+      img {
+        width: 100%;
+      }
+    }
+    div.right {
+      h2 {
+        font-size: 45px !important;
+        b {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section.need {
+    gap: 20px !important;
+    flex-direction: column;
+    div.left {
+      display: none;
+    }
+    div.right {
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: 45px !important;
+        b {
+          font-size: 45px;
+        }
+      }
+      div.cards-need {
+        width: 100%;
+        div.card-need {
+          width: 100%;
+          box-shadow: 1px 4px 4px #0000002b;
+          div.grp {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  section.need {
+    div.right {
+      h2 {
+        font-size: 30px !important;
+        b {
+          font-size: 30px;
+        }
+      }
+      div.cards-need {
+        div.card-need {
+          flex-direction: column;
+          padding: 7%;
+        }
+      }
+    }
+  }
+}
