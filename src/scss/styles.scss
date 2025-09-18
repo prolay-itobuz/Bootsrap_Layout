@@ -8,10 +8,122 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: relative;
+}
+
+.texture{
+  position: absolute;
+}
+.green1{
+  top: 214px;
+  left: 25px;
+  width:20px;
+}
+.green2{
+  left: 66px;
+  width: 28px;
+  top:4593px;
+}
+.green3{
+  width: 28px;
+  right: 193.29px;
+  top: 6285px;
+}
+.green4{
+  width: 28px;
+  left: 482px;
+  bottom: 2375px;
+}
+
+.blue1{
+  width: 28px;
+  top: 920px;
+  left: 768px;
+}
+
+.blue2{
+  width: 28px;
+  right: 174.38px;
+  top: 3108px;
+}
+
+.blue3{
+  width: 28px;
+  left: 519px;
+  top: 3510px;
+}
+
+.blue4{
+  right: 101.38px;
+  width: 28px;
+  bottom: 3759px;
+}
+
+.blue5{
+  width: 25px;
+  left: 212px;
+  bottom: 3036px;
+}
+
+.blue6{
+  width: 25px;
+  right: 142px;
+  bottom: 1660px;
+}
+
+.big{
+  width: 114px;
+  left: 110px;
+  top: 300px;
+}
+
+.small1{
+  width: 15px;
+  top: 213px;
+  left: 902px;
+}
+
+.small2{
+  width: 15px;
+  left: 688px;
+  top: 3169px;
+}
+
+.small3{
+  width: 15px;
+  left: 677px;
+  top: 5239px;
+}
+
+.small4{
+  width: 15px;
+  left: 223px;
+  top: 5835px;
+}
+
+.small5{
+  width: 15px;
+  right: 193px;
+  bottom: 2475px;
+}
+
+.small6{
+  width: 15px;
+  left: 293px;
+  bottom: 1450px;
+}
+
+@media (max-width: 1300px) {
+  .texture{
+    display: none;
+  }
 }
 
 .container-fluid {
   max-width: 1665px;
+  a.navbar-brand{
+      width: 163px !important;
+    }
   .navbar-nav {
     margin-right: 155px;
     margin-left: auto;
@@ -19,6 +131,7 @@ body {
     justify-content: space-evenly;
     width: 50%;
     font-weight: 400px;
+    
     .nav-item {
       .nav-link {
         display: inline-block;
@@ -183,6 +296,7 @@ body {
 
 @media (max-width: 1557px) {
   .container {
+    width: 90%;
     .col {
       h1 {
         margin-top: 150px;
@@ -190,7 +304,7 @@ body {
       }
       .image {
         top: 60px;
-        left: 250px;
+        left: 420px;
       }
     }
     .col:last-child {
@@ -205,7 +319,7 @@ body {
   .container {
     .col {
       .image {
-        left: 65%;
+        left: 75%;
       }
     }
   }
@@ -295,7 +409,8 @@ div.cards {
     gap: 10px;
     // grid-template-columns: repeat(2,1fr);
     div.card {
-      width: 100%;
+      width: 95%;
+      margin: auto;
       height: auto;
       div.grp {
         flex-direction: column;
@@ -312,7 +427,6 @@ div.cards {
   div.cards {
     grid-template-columns: repeat(1, 1fr);
     div.card {
-      width: 100%;
       height: auto;
     }
   }
@@ -323,7 +437,6 @@ div.cards {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 40px;
     div.card {
-      width: 100%;
       height: auto;
       div.grp {
         flex-direction: column !important;
@@ -409,6 +522,9 @@ section.optimize {
 
     h2 {
       font-size: 48px;
+      b{
+        font-size: 48px;
+      }
     }
 
     p {
@@ -432,13 +548,16 @@ section.optimize {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   section.optimize {
     margin-bottom: 120px;
 
     h2 {
       font-size: 42px;
       margin-bottom: 30px;
+      b{
+        font-size: 42px;
+      }
     }
 
     p {
@@ -455,7 +574,7 @@ section.optimize {
         height: auto;
         min-height: 380px;
         margin-bottom: 30px;
-        box-shadow: 1px 4px 4px #747779;
+        box-shadow: 1px 4px 4px #0000002b;
         img {
           margin-bottom: 50px;
         }
@@ -470,6 +589,9 @@ section.optimize {
 
     h2 {
       font-size: 36px;
+      b{
+        font-size: 36px;
+      }
     }
 
     p {
@@ -507,6 +629,9 @@ section.optimize {
     h2 {
       font-size: 32px;
       margin-bottom: 25px;
+      b{
+        font-size: 32px;
+      }
     }
 
     p {
@@ -520,7 +645,7 @@ section.optimize {
         width: 100%;
         min-height: 300px;
         padding: 30px 20px 20px 20px;
-
+border-bottom: 4px solid #717ae0;
         img {
           margin-bottom: 30px;
         }
@@ -539,6 +664,9 @@ section.optimize {
 
     h2 {
       font-size: 28px;
+      b{
+        font-size: 28px;
+      }
     }
 
     p {
@@ -573,6 +701,9 @@ section.optimize {
 
     h2 {
       font-size: 24px;
+      b{
+        font-size: 24px;
+      }
     }
 
     div.item-row {
@@ -604,6 +735,9 @@ section.optimize {
 
     h2 {
       font-size: 22px;
+      b{
+        font-size: 22px;
+      }
     }
 
     p {
@@ -1098,7 +1232,7 @@ section.choose {
   flex-direction: column;
   padding-top: 79px;
   padding-bottom: 89px;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   h2 {
     @include heading;
     width: 100%;
@@ -1154,14 +1288,13 @@ section.choose {
       box-shadow: 1px 4px 4px #898a8b;
     }
     div.card:nth-child(1) {
-      background: url(./assests/images/background/i.png) no-repeat center/cover;
+      background: url(./assests/images/background/i.png) no-repeat center/cover,#ffffff;
     }
     div.card:nth-child(2) {
-      background: url(./assests/images/background/ii.png) no-repeat center/cover;
+      background: url(./assests/images/background/ii.png) no-repeat center/cover,#ffffff;
     }
     div.card:nth-child(3) {
-      background: url(./assests/images/background/iii.png) no-repeat
-        center/cover;
+      background: url(./assests/images/background/iii.png) no-repeat center/cover,#ffffff;
     }
   }
 }
