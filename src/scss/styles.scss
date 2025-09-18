@@ -158,19 +158,21 @@ body {
     }
   }
   form {
-    input {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    height: 80px;
+    button:first-child {
       width: 204px;
       border: 2px solid #212528;
       border-radius: 4px;
       padding: 20px 47px;
-    }
-    input::placeholder {
       color: #212528;
       font-size: 24px;
       text-align: center;
-      width: 109px;
+      background-color: transparent;
     }
-    button {
+    button:last-child {
       width: 83px;
       aspect-ratio: 83/77;
       background-color: #fad725;
@@ -188,8 +190,8 @@ body {
 @media (max-width: 1200px) {
   .container-fluid {
     .navbar-nav {
-      margin-right: auto;
-      margin-left: auto;
+      margin:auto;
+      width: 100%;
     }
     form {
       input {
@@ -1972,7 +1974,9 @@ section.success {
       width: 569px;
       border: 1px solid #efefef;
       height: 273px;
-      background: url(./assests/images/background/success-back.png);
+      background: url(./assests/images/background/success-back.png),#ffffff;
+      background-position: top center;
+      background-size: 120%;
       p {
         width: 472px;
         margin: auto;
