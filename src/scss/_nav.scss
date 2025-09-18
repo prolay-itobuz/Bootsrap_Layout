@@ -36,7 +36,7 @@
       }
     }
   }
-  form {
+  div {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -75,7 +75,7 @@
       margin: auto;
       width: 100%;
     }
-    form {
+    div {
       input {
         width: 204px;
         border: 2px solid #212528;
@@ -109,7 +109,7 @@
       margin-right: auto;
       margin-left: auto;
     }
-    form {
+    div {
       button {
         width: 75px;
         aspect-ratio: 83/77;
