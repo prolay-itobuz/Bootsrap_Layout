@@ -40,7 +40,7 @@ section.choose {
         font-weight: 500;
       }
       p {
-        color: #828282;
+        @include p;
         margin: 0;
         padding: 24px 37px;
         width: 100%;

@@ -12,9 +12,7 @@ section.teams {
   }
   p {
     width: 662px;
-    color: #828282;
-    font-size: 17px;
-    font-weight: 400;
+    @include p;
     margin: auto;
     text-align: center;
     margin-bottom: 64px;

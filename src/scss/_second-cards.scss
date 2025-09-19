@@ -16,8 +16,7 @@ section.three-card {
     }
     p {
       margin-bottom: 11px;
-      font-size: 17px;
-      font-weight: 400;
+      @include p;
     }
     a {
       text-decoration: none;
@@ -31,7 +30,6 @@ section.three-card {
   }
 }
 
-/* Media Queries for Three-Card Section */
 @media (max-width: 1750px) {
   section.three-card {
     padding: 80px 200px 70px 200px;
