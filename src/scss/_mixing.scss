@@ -8,3 +8,10 @@
   font-size: 55px;
   font-weight: 500;
 }
+
+@mixin p{
+  font-size: 17px;
+  font-weight: 400;
+  color: #828282;
+}
+

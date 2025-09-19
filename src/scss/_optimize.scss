@@ -11,10 +11,10 @@ section.optimize {
     }
   }
   p {
-    color: #727272;
-    font-size: 20px;
+    @include p;
     width: 827px;
     margin-bottom: 65px;
+    font-weight: 400;
   }
   div.item-row {
     gap: 22px;

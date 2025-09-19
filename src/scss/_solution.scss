@@ -17,8 +17,7 @@ section.solution {
       }
     }
     p {
-      font-size: 17px;
-      color: #828282;
+      @include p;
       margin-bottom: 14px;
     }
     button {
