@@ -35,7 +35,7 @@ section.choose {
       height: 548px;
       border: none;
       h4 {
-        margin-top: 287px;
+        margin-top: calc(287px - 32px);
         font-size: 20px;
         font-weight: 500;
       }
@@ -54,6 +54,9 @@ section.choose {
         padding: 11px 22px;
         border: none;
         margin: auto;
+      }
+      button:hover{
+        border: 1px solid #212528;
       }
     }
     div.card:hover {
@@ -87,6 +90,10 @@ section.choose {
         box-shadow: 1px 4px 4px #898a8b;
         background-size: contain !important;
         background-position: 50% 30% !important;
+        p{
+          padding: 3%;
+          text-align: center;
+        }
       }
     }
   }
@@ -97,6 +104,7 @@ section.choose {
     padding: 15px;
     h2 {
       font-size: 35px;
+      text-align: left;
       b {
         font-size: 35px;
       }
@@ -104,6 +112,7 @@ section.choose {
     p {
       width: 100%;
       font-size: 16px;
+      text-align: left;
     }
     div.choose-card {
       gap: 10px;

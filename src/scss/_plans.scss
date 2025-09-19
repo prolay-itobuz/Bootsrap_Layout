@@ -58,6 +58,9 @@ section.plans {
           background-color: transparent;
           border-radius: 2px;
         }
+        button:hover{
+          background-color: #f9f4f4;
+        }
       }
       div.plan-card:nth-child(2) {
         background: url(./assests/images/background/plan.png);
@@ -79,6 +82,9 @@ section.plans {
           background-color: #fad725;
           border: none;
           border-radius: 2px;
+        }
+        button:hover{
+          border: 1px solid #212528;
         }
       }
     }

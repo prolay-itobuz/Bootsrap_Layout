@@ -65,6 +65,11 @@ div.grp {
   div.card {
     height: auto;
   }
+  div.grp{
+    img{
+      width: 80px;
+    }
+  }
 }
 
 @media (max-width: 450px) {
