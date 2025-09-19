@@ -1,7 +1,7 @@
 div.analytics {
   max-width: 1165px;
   height: 201px;
-  width: 95%;
+  width: 90%;
   margin: auto;
   padding: 54px 65px;
   display: grid;
@@ -48,8 +48,10 @@ div.analytics {
     }
     div.nums {
       flex-direction: row;
-      align-items: center;
       gap: 30px;
+      h3{
+        font-size: 50px;
+      }
     }
   }
 }

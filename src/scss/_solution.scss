@@ -25,10 +25,13 @@ section.solution {
       background-color: #fad725;
       color: #212528;
       padding: 20px 40px;
-      width: 214px;
+      width: 215px;
       border: none;
       font-size: 24px;
       font-weight: 500;
+    }
+    button:hover{
+      border: 1px solid #212528;
     }
   }
 }

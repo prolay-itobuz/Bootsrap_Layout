@@ -46,6 +46,9 @@ section.subscribe {
       border-radius: 6px;
       padding: 22px 24px;
     }
+    button:hover{
+      background-color: #5a63ed;
+    }
   }
 }
 
@@ -62,6 +65,10 @@ section.subscribe {
       margin: auto;
       input {
         width: 100%;
+        padding: 3%;
+      }
+      button{
+        padding: 3%;
       }
     }
   }
