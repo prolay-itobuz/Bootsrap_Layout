@@ -60,13 +60,16 @@ footer {
       }
       ul {
         flex-direction: column;
-        padding: 0;
+        padding: 10px 0px;
         width: 80%;
         margin-bottom: 0;
       }
     }
     div.bottom {
       flex-direction: column;
+      padding: 10px 0px;
+      width: 80%;
+      margin: auto;
       ul {
         width: 100%;
         padding: 0;

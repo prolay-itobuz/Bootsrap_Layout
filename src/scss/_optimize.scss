@@ -11,9 +11,10 @@ section.optimize {
     }
   }
   p {
-    @include p;
+    font-size: 20px;
+    color: #727272;
     width: 827px;
-    margin-bottom: 65px;
+    margin-bottom: 92px;
     font-weight: 400;
   }
   div.item-row {
@@ -23,7 +24,9 @@ section.optimize {
       height: 472px;
       padding: 56px 44px 0px 34px;
       img {
-        margin-bottom: 91px;
+        margin-bottom: 109px;
+        width: 77px;
+        aspect-ratio: 1;
       }
       h3 {
         font-size: 24px;
@@ -31,6 +34,7 @@ section.optimize {
         margin-bottom: 21px;
       }
       p {
+        @include p;
         width: 100%;
       }
     }

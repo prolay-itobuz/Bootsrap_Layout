@@ -7,15 +7,21 @@ div.cards {
   margin: auto;
   margin-bottom: 170px;
 }
+
 div.card {
   padding: 32px 18px 17px 25px;
   border: none;
   box-shadow: 1px 4px 4px #0000002b;
-  height: 334px;
-  width: 513px;
+  height: 334px; 
+  width: 513px;  
+  display: flex;
+  flex-direction: column;
+
   p {
     @include p;
+    flex-grow: 1;
   }
+
   a {
     display: block;
     text-align: end;
@@ -24,61 +30,92 @@ div.card {
     align-self: flex-end;
   }
 }
+
 div.grp {
   display: flex;
-  gap: 26px;
+  gap: 32px;
   align-items: center;
   margin-bottom: 20px;
+  
   h5 {
-    font-size: 28px;
-    width: 250px;
+    font-size: 38px;
+    width: 259px;
+    font-weight: 400;
   }
+
   img {
     width: 120px;
   }
 }
 
-@media (max-width: 1650px) {
+
+@media (max-width: 1665px) {
   div.cards {
-    gap: 10px;
+    gap: 30px;
+    padding: 15px 30px;
   }
   div.card {
-    width: 95%;
-    margin: auto;
+    width: 100%;
     height: auto;
   }
-  div.grp {
+    div.grp{
     flex-direction: column;
-    align-items: start;
-    h5 {
-      width: 100%;
-    }
+    align-items:start;
+  }
+}
+
+@media (max-width: 1200px) {
+  div.grp h5 {
+    font-size: 32px;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  div.cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    padding: 15px 0px;
+  }
+  div.card {
+    height: auto;
+  }
+  div.grp h5 {
+    font-size: 28px;
   }
 }
 
 @media (max-width: 768px) {
   div.cards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); 
+    
   }
-  div.card {
-    height: auto;
-  }
-  div.grp{
-    img{
+  div.grp {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 15px;
+    h5 {
+      width: 100%;
+      font-size: 26px;
+    }
+    img {
       width: 80px;
     }
   }
 }
 
-@media (max-width: 450px) {
+
+@media (max-width: 480px) {
   div.cards {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    max-width: 100%;
+    padding: 0 15px;
   }
   div.card {
-    height: auto;
+    padding: 25px 20px;
   }
-  div.grp {
-    flex-direction: column;
-    align-items: start;
+  div.grp h5 {
+    font-size: 24px;
   }
 }
