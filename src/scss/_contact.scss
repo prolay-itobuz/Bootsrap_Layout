@@ -1,16 +1,16 @@
 section.contact {
   max-width: 1564px;
-  width: 90%;
+  width: 100%;
   display: flex;
   gap: 15px;
   margin: auto;
   margin-bottom: 9px;
   div.one {
-    //  align-items: center;
     width: 754px;
     padding-top: 162px;
     h3 {
       @include heading;
+      color: #212528;
       b {
         font-size: 55px;
         font-weight: 500;
@@ -62,6 +62,7 @@ section.contact {
 
 @media (max-width: 1700px) {
   section.contact {
+    width: 90%;
     div.one {
       padding-top: 0;
       margin: auto auto;
@@ -97,13 +98,10 @@ section.contact {
   section.contact {
     div.one {
       h3 {
-        font-size: 35px;
+        font-size: 32px;
         b {
-          font-size: 35px;
+          font-size: 32px;
         }
-      }
-      p {
-        font-size: 16px;
       }
       div.group {
         flex-direction: column;
