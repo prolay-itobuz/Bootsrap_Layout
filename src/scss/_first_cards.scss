@@ -1,17 +1,16 @@
-div.cards {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 15px;
   gap: 63px;
   max-width: 1665px;
   margin: auto;
   margin-bottom: 170px;
 }
 
-div.card {
+.card {
   padding: 32px 18px 17px 25px;
   border: none;
-  box-shadow: 1px 4px 4px #0000002b;
+  box-shadow: 0px 17px 33px -14px #02160512;
   height: 334px; 
   width: 513px;  
   display: flex;
@@ -31,16 +30,17 @@ div.card {
   }
 }
 
-div.grp {
+.grp {
   display: flex;
   gap: 32px;
   align-items: center;
   margin-bottom: 20px;
   
-  h5 {
+  h2 {
     font-size: 38px;
     width: 259px;
     font-weight: 400;
+    color: #212528;
   }
 
   img {
@@ -50,22 +50,22 @@ div.grp {
 
 
 @media (max-width: 1665px) {
-  div.cards {
+  .cards {
     gap: 30px;
     padding: 15px 30px;
   }
-  div.card {
+  .card {
     width: 100%;
     height: auto;
   }
-    div.grp{
+    .grp{
     flex-direction: column;
     align-items:start;
   }
 }
 
 @media (max-width: 1200px) {
-  div.grp h5 {
+  .grp h2 {
     font-size: 32px;
   }
 
@@ -73,29 +73,29 @@ div.grp {
 
 
 @media (max-width: 992px) {
-  div.cards {
+  .cards {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
     padding: 15px 0px;
   }
-  div.card {
+  .card {
     height: auto;
   }
-  div.grp h5 {
+  .grp h2 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 768px) {
-  div.cards {
+  .cards {
     grid-template-columns: repeat(1, 1fr); 
     
   }
-  div.grp {
+  .grp {
     flex-direction: column; 
     align-items: flex-start;
     gap: 15px;
-    h5 {
+    h2 {
       width: 100%;
       font-size: 26px;
     }
@@ -107,15 +107,15 @@ div.grp {
 
 
 @media (max-width: 480px) {
-  div.cards {
+  .cards {
     margin-bottom: 60px;
     max-width: 100%;
     padding: 0 15px;
   }
-  div.card {
+  .card {
     padding: 25px 20px;
   }
-  div.grp h5 {
+  .grp h2 {
     font-size: 24px;
   }
 }

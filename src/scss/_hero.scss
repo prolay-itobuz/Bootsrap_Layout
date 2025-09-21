@@ -18,6 +18,7 @@
   p {
     @include p;
     margin: 0;
+    color: #727272;
   }
 }
 .image {
@@ -29,14 +30,14 @@
 div.bottom {
   width: 100%;
   display: flex;
-  margin-top: 40px;
+  margin-top: 69px;
+  gap: 69px;
   button {
     background-color: #fad725;
     color: #212528;
     border: none;
     font-size: 24px;
     width: 218px;
-    margin-right: 69px;
   }
   button:hover {
     border: 1px solid #212528;
