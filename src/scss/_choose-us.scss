@@ -5,15 +5,18 @@ section.choose {
   padding-top: 79px;
   padding-bottom: 89px;
   background-color: #fafafa;
+
   h2 {
     @include heading;
     width: 100%;
     margin-bottom: 21px;
+
     b {
       @include heading;
       color: #6f77f1;
     }
   }
+
   p {
     color: #828282;
     font-size: 17px;
@@ -23,28 +26,34 @@ section.choose {
     margin-bottom: 56px;
   }
 
-  div.choose-card {
+  div.choose-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     margin: auto;
     width: 1165px;
 
-    div.card {
+    div.choose-card {
       width: 365px;
       height: 548px;
+      padding: 0px 36.5px;
+      padding-bottom: 58px;
       border: none;
+
       h4 {
-        margin-top: calc(287px - 32px);
         font-size: 20px;
         font-weight: 500;
+        color: #212528;
+        margin-top: 286px;
+        margin-bottom: 23px
       }
+
       p {
         @include p;
-        margin: 0;
-        padding: 24px 37px;
+        margin-bottom: 36px;
         width: 100%;
       }
+
       button {
         width: 124px;
         background-color: #fad725;
@@ -55,24 +64,28 @@ section.choose {
         border: none;
         margin: auto;
       }
-      button:hover{
+
+      button:hover {
         border: 1px solid #212528;
       }
     }
-    div.card:hover {
-      box-shadow: 1px 4px 4px #898a8b;
+
+    div.choose-card:hover {
+      box-shadow: 0px 34px 50px -17px #0216051A;
     }
-    div.card:nth-child(1) {
+
+    div.choose-card:nth-child(1) {
       background: url(./assests/images/background/i.png) no-repeat center/cover,
         #ffffff;
     }
-    div.card:nth-child(2) {
+
+    div.choose-card:nth-child(2) {
       background: url(./assests/images/background/ii.png) no-repeat center/cover,
         #ffffff;
     }
-    div.card:nth-child(3) {
-      background: url(./assests/images/background/iii.png) no-repeat
-          center/cover,
+
+    div.choose-card:nth-child(3) {
+      background: url(./assests/images/background/iii.png) no-repeat center/cover,
         #ffffff;
     }
   }
@@ -80,17 +93,22 @@ section.choose {
 
 @media (max-width: 1200px) {
   section.choose {
-    padding: 15px;
-    div.choose-card {
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+    div.choose-cards {
       grid-template-columns: repeat(2, 1fr);
       width: 100%;
-      div.card {
+
+      div.choose-card {
         width: 100%;
         margin: auto;
-        box-shadow: 1px 4px 4px #898a8b;
+        box-shadow: 0px 34px 50px -17px #0216051A;
         background-size: contain !important;
         background-position: 50% 30% !important;
-        p{
+        padding: 0px 10px;
+        padding-bottom: 10px;
+        p {
           padding: 3%;
           text-align: center;
         }
@@ -101,31 +119,35 @@ section.choose {
 
 @media (max-width: 900px) {
   section.choose {
-    padding: 15px;
+
     h2 {
-      font-size: 35px;
+      font-size: 32px;
       text-align: left;
       b {
-        font-size: 35px;
+        font-size: 32px;
       }
     }
+
     p {
       width: 100%;
-      font-size: 16px;
       text-align: left;
     }
-    div.choose-card {
+
+    div.choose-cards {
       gap: 10px;
       grid-template-columns: repeat(1, 1fr);
       width: 100%;
-      div.card {
+
+      div.choose-card {
         margin: auto;
         height: auto;
         width: 100%;
         background-size: contain !important;
+
         h4 {
           margin-top: 200px;
         }
+
         button {
           margin-bottom: 10px;
         }

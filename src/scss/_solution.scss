@@ -107,7 +107,7 @@ div.left {
     margin: auto;
     flex-direction: column;
     text-align: left;
-
+  }
     div.left {
       h2 {
         font-size: 38px;
@@ -124,7 +124,6 @@ div.left {
         font-size: 18px;
       }
     }
-  }
 }
 
 @media (max-width: 768px) {
