@@ -2,7 +2,7 @@ section.plans {
   background-color: #fafafa;
   height: 858px;
   div.plan {
-    width: 95%;
+    width: 100%;
     max-width: 1167px;
     margin: auto;
     text-align: center;
@@ -20,6 +20,7 @@ section.plans {
     div.plan-cards {
       display: flex;
       justify-content: space-between;
+      gap: 25px;
       div.plan-card {
         width: 372px;
         height: 523px;
@@ -59,7 +60,7 @@ section.plans {
           border-radius: 2px;
         }
         button:hover{
-          background-color: #f9f4f4;
+          background-color: #ced1d6;
         }
       }
       div.plan-card:nth-child(2) {
@@ -94,10 +95,11 @@ section.plans {
 @media (max-width: 1200px) {
   section.plans {
     div.plan {
+      width: 90%;
       div.plan-cards {
         justify-content: space-evenly;
         gap: 20px;
-        width: 95%;
+        width: 100%;
         margin: auto;
         div.plan-card {
           width: 100%;
@@ -121,12 +123,15 @@ section.plans {
 
     div.plan {
       h2 {
-        font-size: 40px;
+        font-size: 32px;
+        padding: 0px;
+      }
+      p{
+        margin: 0px;
       }
       div.plan-cards {
         flex-direction: column;
-        width: 90%;
-        margin: auto;
+
         gap: 10px;
         div.plan-card {
           width: 100%;
