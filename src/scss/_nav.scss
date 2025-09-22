@@ -2,6 +2,7 @@
   max-width: 1665px;
   a.navbar-brand {
     width: 163px;
+   color: #212528;    
   }
 }
 
@@ -9,7 +10,7 @@
   margin-right: 155px;
   margin-left: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 50%;
   font-weight: 400px;
 }
@@ -18,6 +19,7 @@
   display: inline-block;
   position: relative;
   padding-bottom: 2px;
+  color: #212528;
 }
 .nav-link::after {
   content: "";

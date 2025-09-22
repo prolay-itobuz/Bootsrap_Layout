@@ -1,21 +1,26 @@
-div.cards {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 15px;
   gap: 63px;
   max-width: 1665px;
   margin: auto;
   margin-bottom: 170px;
 }
-div.card {
+
+.card {
   padding: 32px 18px 17px 25px;
   border: none;
-  box-shadow: 1px 4px 4px #0000002b;
-  height: 334px;
-  width: 513px;
+  box-shadow: 0px 17px 33px -14px #02160512;
+  height: 334px; 
+  width: 513px;  
+  display: flex;
+  flex-direction: column;
+
   p {
     @include p;
+    flex-grow: 1;
   }
+
   a {
     display: block;
     text-align: end;
@@ -24,61 +29,98 @@ div.card {
     align-self: flex-end;
   }
 }
-div.grp {
+
+.grp {
   display: flex;
-  gap: 26px;
+  gap: 32px;
   align-items: center;
   margin-bottom: 20px;
-  h5 {
-    font-size: 28px;
-    width: 250px;
+  
+  h2 {
+    font-size: 38px;
+    width: 259px;
+    font-weight: 400;
+    color: #212528;
   }
+
   img {
     width: 120px;
   }
 }
 
-@media (max-width: 1650px) {
-  div.cards {
-    gap: 10px;
+
+@media (max-width: 1665px) {
+  .cards {
+    gap: 30px;
+    padding: 15px 30px;
   }
-  div.card {
-    width: 95%;
-    margin: auto;
+  .card {
+    width: 100%;
     height: auto;
   }
-  div.grp {
+    .grp{
     flex-direction: column;
-    align-items: start;
-    h5 {
+    align-items:start;
+    img{
+      width: 100px;
+    }
+    h2{
       width: 100%;
     }
   }
 }
 
-@media (max-width: 768px) {
-  div.cards {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 1200px) {
+  .grp h2 {
+    font-size: 32px;
   }
-  div.card {
+
+}
+
+
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    padding: 15px 0px;
+  }
+  .card {
     height: auto;
   }
-  div.grp{
-    img{
+  .grp h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr); 
+    
+  }
+  .grp {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 15px;
+    h2 {
+      width: 100%;
+      font-size: 26px;
+    }
+    img {
       width: 80px;
     }
   }
 }
 
-@media (max-width: 450px) {
-  div.cards {
-    margin-bottom: 40px;
+
+@media (max-width: 480px) {
+  .cards {
+    margin-bottom: 60px;
+    max-width: 100%;
   }
-  div.card {
-    height: auto;
+  .card {
+    padding: 25px 20px;
   }
-  div.grp {
-    flex-direction: column;
-    align-items: start;
+  .grp h2 {
+    font-size: 24px;
   }
 }

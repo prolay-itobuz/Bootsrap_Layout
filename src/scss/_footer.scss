@@ -14,6 +14,7 @@ footer {
       width: 679px;
       margin: auto;
       display: flex;
+      padding: 0px;
       justify-content: space-between;
       margin-bottom: 52.5px;
       a {
@@ -30,6 +31,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 22.5px;
+    margin: 0px;
     p {
       font-size: 13px;
       font-weight: 400;
@@ -52,21 +54,24 @@ footer {
 
 @media (max-width: 768px) {
   footer {
+    width: 90%;
     div.top {
       h2 {
         text-align: start;
-        width: 80%;
-        margin: auto;
+        margin: 0px;
       }
       ul {
         flex-direction: column;
-        padding: 0;
-        width: 80%;
+        padding: 10px 0px;
         margin-bottom: 0;
+        width: 100%;
       }
     }
     div.bottom {
       flex-direction: column;
+      padding: 10px 0px;
+      height: auto;
+      gap: 10px;
       ul {
         width: 100%;
         padding: 0;

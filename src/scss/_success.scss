@@ -1,10 +1,10 @@
 section.success {
   h2 {
-    font-size: 55px;
-    font-weight: 500;
+    @include heading;
     text-align: center;
     margin-bottom: 21px;
   }
+
   p {
     @include p;
     text-align: center;
@@ -12,15 +12,16 @@ section.success {
     margin: auto;
     margin-bottom: 46px;
   }
+
   div.scroll {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     gap: 28px;
-    padding: 2%;
     margin-bottom: 30px;
+
     div.scroll-item {
       flex-shrink: 0;
       width: 569px;
@@ -29,6 +30,7 @@ section.success {
       background: url(./assests/images/background/success-back.png), #ffffff;
       background-position: top center;
       background-size: 120%;
+
       p {
         width: 472px;
         margin: auto;
@@ -37,17 +39,20 @@ section.success {
         color: #828282;
         margin-bottom: 21px;
       }
+
       img {
         margin: auto;
         display: block;
         margin-bottom: 10px;
       }
+
       h3 {
         text-align: center;
         font-size: 12px;
         font-weight: 500;
         margin-bottom: 1px;
       }
+
       span {
         display: block;
         text-align: center;
@@ -57,13 +62,16 @@ section.success {
         margin-bottom: 33px;
       }
     }
+
     div.scroll-item:hover {
-      box-shadow: 1px 4px 4px #0000002b;
+      box-shadow: 0px 34px 50px -17px #0216051A;
     }
   }
+
   div.scroll::-webkit-scrollbar {
     display: none;
   }
+
   div.pagination {
     width: 65px;
     display: flex;
@@ -71,6 +79,7 @@ section.success {
     justify-content: space-between;
     margin-bottom: 249px;
     gap: 10px;
+
     span {
       width: 7px;
       aspect-ratio: 1;
@@ -79,6 +88,7 @@ section.success {
       border-radius: 100%;
       margin: auto;
     }
+
     span.active {
       width: 14px;
       background-color: #6f77f1;
@@ -86,14 +96,16 @@ section.success {
   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 900px) {
   section.success {
     h2 {
-      font-size: 35px;
+      font-size: 40px;
     }
+
     p {
       width: 90%;
     }
+
     div.pagination {
       margin-bottom: 30px;
     }
@@ -102,17 +114,29 @@ section.success {
 
 @media (max-width: 620px) {
   section.success {
+    width: 90%;
+    margin: auto;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      width: 100%;
+    }
+
     div.scroll {
-      width: 95%;
+      width: 100%;
+
       div.scroll-item {
-        width: 90%;
+        width: 100%;
+        padding: 2%;
         height: auto;
         background: url(./assests/images/background/success-back.png);
         background-size: 500%;
         background-position: top;
+        box-shadow: 0px 34px 50px -17px #0216051A;
+
         p {
-          width: 90%;
-          font-size: 16px;
+          width: 100%;
         }
       }
     }

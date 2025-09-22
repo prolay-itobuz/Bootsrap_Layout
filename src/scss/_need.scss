@@ -19,6 +19,7 @@ section.need {
     h2 {
       @include heading;
       margin-bottom: 36px;
+      color: #212528;
       b {
         @include heading;
         color: #6f77f1;
@@ -58,14 +59,17 @@ section.need {
           flex-direction: column;
           h3 {
             width: 100%;
+            font-size: 23px;
+            color: #212528;
+            margin: 0px;
           }
           p {
-            margin: 0;
+            margin: 0px;
           }
         }
       }
       div.card-need:hover {
-        box-shadow: 1px 4px 4px #0000002b;
+        box-shadow: 5px 25px 37px 0px #0216050F;
       }
     }
   }
@@ -73,9 +77,9 @@ section.need {
 
 @media (max-width: 1500px) {
   section.need {
-    gap: 20px !important;
+    gap: 20px ;
     div.left {
-      width: 600px !important;
+      width: 600px;
       align-self: center;
 
       img {
@@ -84,7 +88,7 @@ section.need {
     }
     div.right {
       h2 {
-        font-size: 45px !important;
+        font-size: 45px ;
         b {
           font-size: 45px;
         }
@@ -95,7 +99,7 @@ section.need {
 
 @media (max-width: 1200px) {
   section.need {
-    gap: 20px !important;
+    gap: 20px;
     flex-direction: column;
     div.left {
       display: none;
@@ -104,7 +108,7 @@ section.need {
       width: 90%;
       margin: auto;
       h2 {
-        font-size: 45px !important;
+        font-size: 45px;
         b {
           font-size: 45px;
         }
@@ -113,7 +117,7 @@ section.need {
         width: 100%;
         div.card-need {
           width: 100%;
-          box-shadow: 1px 4px 4px #0000002b;
+          box-shadow: 5px 25px 37px 0px #0216050F;
           div.grp {
             width: 100%;
           }
@@ -127,9 +131,9 @@ section.need {
   section.need {
     div.right {
       h2 {
-        font-size: 30px !important;
+        font-size: 32px;
         b {
-          font-size: 30px;
+          font-size: 32px;
         }
       }
       div.cards-need {

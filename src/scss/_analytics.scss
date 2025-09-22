@@ -1,7 +1,7 @@
-div.analytics {
+.analytics {
   max-width: 1165px;
   height: 201px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 54px 65px;
   display: grid;
@@ -39,10 +39,11 @@ div.analytics {
 }
 
 @media (max-width: 1050px) {
-  div.analytics {
+  .analytics {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     height: auto;
+    width: 90%;
     span.green {
       display: none;
     }
@@ -57,7 +58,7 @@ div.analytics {
 }
 
 @media (max-width: 650px) {
-  div.analytics {
+  .analytics {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     span.green {
@@ -68,6 +69,9 @@ div.analytics {
       align-items: center;
       margin: auto;
       gap: 0px;
+            h3{
+        font-size: 32px;
+      }
     }
   }
 }
