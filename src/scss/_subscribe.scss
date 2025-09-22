@@ -1,6 +1,28 @@
+div.msg{
+  color: red;
+  text-align: center;
+  padding: 3%;
+  padding-top: 0px;
+  display: none;
+}
+
+div.name{
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+}
+
+div.email{
+  position: absolute;
+  bottom: 5%;
+  right: 37%;
+}
+
+
 section.subscribe {
   background-color: #fafafa;
   max-width: 1367px;
+  position: relative;
   width: 100%;
   margin: auto;
   padding-top: 57px;
@@ -103,3 +125,36 @@ section.subscribe {
     }
   }
 }
+
+
+
+.demo-toast {
+  width: 300px;
+  background-color: greenyellow;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 1rem;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.demo-toast-animate-in {
+    animation: demo-toast-animate 1s 1 forwards;
+}
+
+.demo-toast-animate-out {
+   animation: demo-toast-animate 1s 1 forwards;
+    animation-direction: reverse;
+}
+
+@keyframes demo-toast-animate {
+  from{
+    bottom: -20%;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+

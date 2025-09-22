@@ -1,17 +1,20 @@
 .container-fluid {
   max-width: 1665px;
+  padding: 0;
   a.navbar-brand {
     width: 163px;
    color: #212528;    
+   display: flex;
+   gap: 3px;
   }
 }
 
 .navbar-nav {
-  margin-right: 155px;
-  margin-left: auto;
+  margin-right: auto;
+  margin-left: 344px;
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 46%;
   font-weight: 400px;
 }
 
