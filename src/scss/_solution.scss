@@ -2,10 +2,18 @@
   background: url('../assests/images/background/curve.png');
   margin-bottom: 0px;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sol-btn {
   padding: 10px 20px;
+  transition: all 500ms;
+}
+
+.sol-btn:hover {
+  background-color: rgb(255, 153, 0) !important;
+  transition: all 500ms;
 }
 
 .sol-p {
@@ -25,10 +33,7 @@
 }
 
 @media(min-width:768px) {
-    .solution {
-    padding: 98px 150px !important;
-    gap: 48px !important;
-  }
+
   .sol-btn {
     padding: 15px 30px;
     font-size: 24px;
@@ -48,13 +53,21 @@
 }
 
 
+@media(min-width:1200px) {
+  .solution {
+    padding: 50px 80px !important;
+    gap: 48px !important;
+    justify-content: space-evenly;
+  }
+}
+
+
 
 @media(min-width:1400px) {
 
   .sol-btn {
     padding: 20px 40px;
   }
-
   .right {
     width: 607px !important;
     height: 343px;
@@ -75,20 +88,24 @@
 }
 
 @media(min-width:1900px) {
-  .solution{
+  .solution {
     padding: 112px 205px !important;
-    }
+  }
+
   .left {
     padding: 0px;
+
     h2 {
       font-size: 55px;
       margin-bottom: 20px;
+
       b {
         font-size: 55px;
       }
     }
   }
-  .sol-p{
+
+  .sol-p {
     line-height: 27px;
     margin-bottom: 32px;
   }
