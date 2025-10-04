@@ -1,6 +1,6 @@
 .container {
   max-width: 1665px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .col {
@@ -25,22 +25,26 @@ div.bottom {
 
   button {
     width: 218px;
+    border-radius: 4px;
+    transition: all 500ms;
   }
 
   button:hover {
-    border: 1px solid #212528;
+    background-color: rgb(255, 153, 0) !important;
+    transition: all 500ms;
   }
 }
 
 
 @media (min-width: 576px) {
   .col {
+    gap: 20px;
     h1 {
       font-size: 40px;
     }
 
     p {
-      font-size: 18px
+      font-size: 18px;
     }
   }
 
@@ -149,7 +153,7 @@ div.bottom {
   .image {
     position: absolute;
     width: 199px;
-    right: -1px;
+    right: 0px;
     bottom: 0px;
   }
 }

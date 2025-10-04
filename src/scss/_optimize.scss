@@ -5,10 +5,10 @@ section.optimize {
 
   h2 {
     @include heading;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 
     b {
-      color: #6f77f1;
+      color: #6f77f1 !important;
       @include heading;
     }
   }
@@ -30,7 +30,7 @@ section.optimize {
       padding: 56px 44px 0px 34px;
 
       img {
-        margin-bottom: 109px;
+        margin-bottom: 115px;
         width: 77px;
         aspect-ratio: 1;
       }
@@ -38,7 +38,7 @@ section.optimize {
       h3 {
         font-size: 24px;
         font-weight: 500;
-        margin-bottom: 21px;
+        margin-bottom: 25px;
         color: #212528;
       }
 
@@ -74,9 +74,15 @@ section.optimize {
   }
 }
 
+@media (min-width:1900px){
+ .optimize{
+  padding: 0;
+  margin-top: 180px !important;
+ } 
+}
+
 @media (max-width: 1750px) {
   section.optimize {
-    max-width: 90%;
     margin-bottom: 180px;
 
     p {
@@ -188,6 +194,9 @@ section.optimize {
         font-size: 32px;
       }
     }
+    p{
+      margin-bottom: 50px;
+    }
 
     div.item-row {
       gap: 15px;
@@ -205,3 +214,6 @@ section.optimize {
     }
   }
 }
+
+
+

@@ -1,83 +1,42 @@
-section.solution {
-  padding: 98px 333px;
-  background: url(./assests/images/background/curve.png) no-repeat center/cover;
-  display: flex;
-  gap: 48px;
+.solution {
+  background: url('../assests/images/background/curve.png');
+  margin-bottom: 0px;
+  background-position: center;
 }
 
-div.left {
-  flex-direction: column;
-  gap: 20px;
-  display: flex;
+.sol-btn {
+  padding: 10px 20px;
+}
 
+.sol-p {
+  color: #828282 !important;
+  font-size: 17px !important;
+}
+
+.left {
   h2 {
-    @include heading;
-    color: #212528;
+    font-size: 32px;
 
     b {
-      @include heading;
-      color: #6f77f1;
+      color: #6F77F1 !important;
+      font-size: 32px;
     }
   }
+}
 
-  p {
-    @include p;
-    margin-bottom: 14px;
+@media(min-width:768px) {
+    .solution {
+    padding: 98px 150px !important;
+    gap: 48px !important;
   }
-
-  button {
-    background-color: #fad725;
-    color: #212528;
-    padding: 20px 40px;
-    width: 215px;
-    border: none;
+  .sol-btn {
+    padding: 15px 30px;
     font-size: 24px;
-    font-weight: 500;
   }
 
-  button:hover {
-    border: 1px solid #212528;
-  }
-}
+  .left {
+    padding: 20px;
 
-
-@media (max-width: 1750px) {
-  section.solution {
-    padding: 80px 200px;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 1440px) {
-  section.solution {
-    padding: 70px 150px;
-  }
-
-  div.left {
-    h2 {
-      font-size: 48px;
-
-      b {
-        font-size: 48px;
-      }
-    }
-
-    button {
-      padding: 18px 35px;
-      width: 200px;
-      font-size: 22px;
-    }
-  }
-}
-
-
-@media (max-width: 1200px) {
-  section.solution {
-    padding: 60px 100px;
-    gap: 35px;
-  }
-
-  div.left {
     h2 {
       font-size: 42px;
 
@@ -85,112 +44,52 @@ div.left {
         font-size: 42px;
       }
     }
-
-    button {
-      padding: 16px 30px;
-      width: 180px;
-      font-size: 20px;
-    }
-  }
-
-  div.right img {
-    width: 100%;
-    height: auto;
   }
 }
 
 
-@media (max-width: 992px) {
-  section.solution {
-    padding: 0px;
-    width: 90%;
-    margin: auto;
-    flex-direction: column;
-    text-align: left;
-  }
-    div.left {
-      h2 {
-        font-size: 38px;
 
-        b {
-          font-size: 38px;
-        }
-      }
+@media(min-width:1400px) {
 
-      button {
-        margin: 0 auto;
-        padding: 15px 25px;
-        width: 170px;
-        font-size: 18px;
-      }
-    }
-}
-
-@media (max-width: 768px) {
-  section.solution {
-    gap: 30px;
+  .sol-btn {
+    padding: 20px 40px;
   }
 
-  div.left {
+  .right {
+    width: 607px !important;
+    height: 343px;
+  }
+
+  .left {
+    width: 601px;
+    padding: 20px;
+
     h2 {
-      font-size: 32px;
+      font-size: 50px;
 
       b {
-        font-size: 32px;
+        font-size: 50px;
       }
     }
-
-    button {
-      padding: 14px 22px;
-      width: 160px;
-      font-size: 16px;
-    }
   }
 }
 
-
-@media (max-width: 576px) {
-  section.solution {
-    padding: 30px 20px;
-  }
-
-  div.left {
-    button {
-      padding: 12px 20px;
-      width: 150px;
-      font-size: 15px;
+@media(min-width:1900px) {
+  .solution{
+    padding: 112px 205px !important;
+    }
+  .left {
+    padding: 0px;
+    h2 {
+      font-size: 55px;
+      margin-bottom: 20px;
+      b {
+        font-size: 55px;
+      }
     }
   }
-}
-
-
-@media (max-width: 400px) {
-  section.solution {
-    padding: 25px 15px;
-  }
-
-  div.left {
-
-    button {
-      padding: 10px 18px;
-      width: 140px;
-      font-size: 14px;
-    }
-  }
-}
-
-
-@media (max-width: 320px) {
-  section.solution {
-    padding: 20px 10px;
-  }
-
-  div.left {
-
-    button {
-      padding: 8px 16px;
-      width: 130px;
-      font-size: 13px;
-    }
+  .sol-p{
+    line-height: 27px;
+    margin-bottom: 32px;
   }
 }

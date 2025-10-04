@@ -1,6 +1,12 @@
 .nav-btn-one {
   border-radius: 4px;
   width: 220px;
+  transition: all 500ms;
+}
+
+.nav-btn-one:hover {
+  background-color: aliceblue;
+  transition: all 500ms;
 }
 
 .nav-link {
@@ -29,6 +35,11 @@
 
 .nav-btn-two {
   border-radius: 4px;
+  transition: all 500ms;
+}
+.nav-btn-two:hover {
+  background-color: rgb(255, 153, 0) !important;
+  transition: all 500ms;
 }
 
 .navbar {
