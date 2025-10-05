@@ -1,5 +1,5 @@
 div.msg{
-  color: red;
+  color: red !important;
   text-align: center;
   padding: 3%;
   padding-top: 0px;
@@ -25,7 +25,7 @@ section.subscribe {
   position: relative;
   width: 100%;
   margin: auto;
-  padding-top: 57px;
+  padding-top: 62px;
   border: none;
   border-radius: 16px;
   margin-bottom: 170px;
@@ -56,14 +56,14 @@ section.subscribe {
       border: 1px solid #c3c6d0;
     }
     input::placeholder {
-      color: #727272;
+      color: #727272 !important;
       font-size: 19px;
     }
     button {
       width: 169px;
       border: none;
       background-color: #6f77f1;
-      color: white;
+      color: white !important;
       font-size: 20px;
       font-weight: 500;
       border-radius: 6px;
@@ -75,11 +75,15 @@ section.subscribe {
   }
 }
 
-
+@media(min-width:1900px){
+  .subscribe {
+    padding: 0px !important;
+    padding-top: 65px !important;
+  }
+}
 
 @media (max-width: 1200px) {
   section.subscribe {
-    width: 90%;
     margin: auto;
     margin-bottom: 20px;
     h3 {

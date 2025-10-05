@@ -10,11 +10,13 @@
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   margin-bottom: 87px;
+
   div.nums {
     display: flex;
     flex-direction: column;
     width: 172px;
     text-align: center;
+    gap: 7px !important;
     h3 {
       font-size: 73px;
       font-weight: 600;
@@ -23,12 +25,14 @@
       text-align: center;
       margin: 0;
     }
+
     p {
       font-size: 17px;
       font-weight: 500;
       color: #6f6f6f;
     }
   }
+
   span {
     width: 14px;
     border-radius: 100%;
@@ -38,19 +42,31 @@
   }
 }
 
+@media (min-width: 1900px) {
+  .analytics {
+    margin-top: 98px !important;
+
+    div.nums:last-child {
+      width: 142px;
+    }
+  }
+}
+
 @media (max-width: 1050px) {
   .analytics {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     height: auto;
-    width: 90%;
+
     span.green {
       display: none;
     }
+
     div.nums {
       flex-direction: row;
       gap: 30px;
-      h3{
+
+      h3 {
         font-size: 50px;
       }
     }
@@ -61,15 +77,18 @@
   .analytics {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+
     span.green {
       display: block;
     }
+
     div.nums {
       flex-direction: column;
       align-items: center;
       margin: auto;
       gap: 0px;
-            h3{
+
+      h3 {
         font-size: 32px;
       }
     }
