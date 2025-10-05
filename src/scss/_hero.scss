@@ -9,7 +9,7 @@
     font-optical-sizing: auto;
     font-weight: 700;
     color: #212528;
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -128,19 +128,21 @@ div.bottom {
   }
   .col:first-child {
       gap: 25px;
-      padding-left: 12px;
+      padding-left: 10px;
       padding-top: 25px;
     h1 {
       font-size: 90px;
       width: 883px;
+      line-height: 100px;
       letter-spacing: 2px;
       word-spacing: 4px;
       position: relative;
     }
     p{
       width: 827px;
-      margin-top: 0px;
+      margin-top: 10px;
       margin-bottom: 45px;
+      line-height: 30px;
     }
 
   }
@@ -152,8 +154,8 @@ div.bottom {
 
   .image {
     position: absolute;
-    width: 199px;
+    width: 200px;
     right: 0px;
-    bottom: 0px;
+    bottom: -10px;
   }
 }
