@@ -1,126 +1,81 @@
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 63px;
-  max-width: 1665px;
-  margin: auto;
-  margin-bottom: 170px;
-}
-
-.card {
-  padding: 32px 18px 17px 25px;
-  border: none;
-  box-shadow: 0px 17px 33px -14px #02160512;
-  height: 334px; 
-  width: 513px;  
-  display: flex;
-  flex-direction: column;
-
-  p {
-    @include p;
-    flex-grow: 1;
-  }
-
-  a {
-    display: block;
-    text-align: end;
-    color: #212528;
-    margin-top: 30px;
-    align-self: flex-end;
-  }
-}
-
 .grp {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  margin-bottom: 20px;
-  
-  h2 {
-    font-size: 38px;
-    width: 259px;
-    font-weight: 400;
-    color: #212528;
-  }
-
   img {
-    width: 120px;
+    width: 130px;
   }
 }
 
+.card-text {
+  color: #828282 !important;
+}
 
-@media (max-width: 1665px) {
+
+@media (min-width :992px) {
   .cards {
-    gap: 30px;
-    padding: 15px 30px;
+    margin-top: 80px !important;
   }
+
   .card {
-    width: 100%;
-    height: auto;
-  }
-    .grp{
-    flex-direction: column;
-    align-items:start;
-    img{
-      width: 100px;
-    }
-    h2{
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .grp h2 {
-    font-size: 32px;
+    border: none !important;
+    box-shadow: 0px 17px 33px -14px #02160512;
   }
 
 }
 
 
-@media (max-width: 992px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    padding: 15px 0px;
-  }
-  .card {
-    height: auto;
-  }
-  .grp h2 {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(1, 1fr); 
-    
-  }
+@media (min-width :1200px) {
   .grp {
-    flex-direction: column; 
-    align-items: flex-start;
-    gap: 15px;
     h2 {
-      width: 100%;
-      font-size: 26px;
-    }
-    img {
-      width: 80px;
+      font-size: 30px !important;
+      font-weight: 400;
     }
   }
+
+  .card {
+    width: 513px;
+    height: 334px;
+  }
+
+}
+
+@media (min-width :1400px) {
+  .cards {
+    gap: 63px !important;
+  }
+
+  .grp {
+    gap: 28px !important;
+
+    h2 {
+      font-size: 38px !important;
+      font-weight: 400;
+      width: 259px;
+    }
+  }
+
+  .card-text {
+    font-size: 17px;
+  }
+
 }
 
 
-@media (max-width: 480px) {
+
+@media (min-width :1900px) {
   .cards {
-    margin-bottom: 60px;
-    max-width: 100%;
+    margin-top: 140px !important;
+    padding: 0 !important;
   }
-  .card {
-    padding: 25px 20px;
+.card{
+  padding-left: 23px !important;
+  padding-right: 18px !important;
+  padding-bottom: 17px !important;
+  h2{
+    line-height:55px;
+    margin: 0 !important;
   }
-  .grp h2 {
-    font-size: 24px;
+  .card-text{
+    margin-top: 18px;
+    line-height: 27px;
   }
+}
 }

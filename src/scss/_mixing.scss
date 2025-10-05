@@ -11,8 +11,8 @@
 }
 
 @mixin p{
-  font-size: 17px;
-  font-weight: 400;
-  color: #828282;
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  color: #828282 !important;
 }
 

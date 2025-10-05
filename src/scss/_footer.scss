@@ -1,8 +1,11 @@
 footer {
   display: flex;
+
   flex-direction: column;
   max-width: 1658px;
   margin: auto;
+  margin-top: 20px !important;
+
   div.top {
     h2 {
       font-size: 45px;
@@ -10,6 +13,7 @@ footer {
       text-align: center;
       margin-bottom: 26px;
     }
+
     ul {
       width: 679px;
       margin: auto;
@@ -17,6 +21,7 @@ footer {
       padding: 0px;
       justify-content: space-between;
       margin-bottom: 52.5px;
+
       a {
         font-size: 20px;
         color: #212528;
@@ -25,6 +30,7 @@ footer {
       }
     }
   }
+
   div.bottom {
     border-top: 1px solid #eae5e5;
     padding: 0 53px;
@@ -32,16 +38,19 @@ footer {
     justify-content: space-between;
     padding-top: 22.5px;
     margin: 0px;
+
     p {
       font-size: 13px;
       font-weight: 400;
       color: #828282;
     }
+
     ul {
       width: 320px;
       display: flex;
       margin-bottom: 29px;
       justify-content: space-between;
+
       a {
         color: #828282;
         font-size: 13px;
@@ -54,12 +63,15 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    width: 90%;
+    padding-left: 12px;
+    padding-right: 12px;
+
     div.top {
       h2 {
         text-align: start;
         margin: 0px;
       }
+
       ul {
         flex-direction: column;
         padding: 10px 0px;
@@ -67,11 +79,13 @@ footer {
         width: 100%;
       }
     }
+
     div.bottom {
       flex-direction: column;
       padding: 10px 0px;
       height: auto;
       gap: 10px;
+
       ul {
         width: 100%;
         padding: 0;

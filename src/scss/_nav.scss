@@ -1,29 +1,19 @@
-.container-fluid {
-  max-width: 1665px;
-  padding: 0;
-  a.navbar-brand {
-    width: 163px;
-   color: #212528;    
-   display: flex;
-   gap: 3px;
-  }
+.nav-btn-one {
+  border-radius: 4px;
+  width: 220px;
+  transition: all 500ms;
 }
 
-.navbar-nav {
-  margin-right: auto;
-  margin-left: 344px;
-  display: flex;
-  justify-content: space-between;
-  width: 46%;
-  font-weight: 400px;
+.nav-btn-one:hover {
+  background-color: aliceblue;
+  transition: all 500ms;
 }
 
 .nav-link {
   display: inline-block;
   position: relative;
-  padding-bottom: 2px;
-  color: #212528;
 }
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -36,76 +26,143 @@
   transition: transform 0.25s ease-out;
   transform-origin: bottom right;
 }
+
 .nav-link:hover::after,
 .nav-link.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-div.d-flex {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  height: 80px;
+.nav-btn-two {
+  border-radius: 4px;
+  transition: all 500ms;
+}
+.nav-btn-two:hover {
+  background-color: rgb(255, 153, 0) !important;
+  transition: all 500ms;
+}
 
-  button:first-child {
+.navbar {
+  background-color: #FFFFFF !important;
+  max-width: 1665px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  word-spacing: 0;
+  img{
+    margin-left: -5px;
+  }
+}
+
+.navbar {
+  margin-top: 5px !important;
+}
+
+@media (min-width : 768px) {
+  .navbar {
+    margin-top: 10px !important;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }
+
+  .nav-btn-one {
+    width: auto;
+  }
+}
+
+@media (min-width : 992px) {
+  .navbar {
+    margin-top: 20px !important;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .navbar-nav {
+    gap: 20px !important;
+  }
+}
+
+@media (min-width : 1200px) {
+  .navbar {
+    margin-top: 25px !important;
+  }
+
+  .navbar-brand {
+    font-size: 35px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+    .nav-btn-one {
     width: 204px;
-    border: 2px solid #212528;
-    border-radius: 4px;
-    padding: 20px 47px;
-    color: #212528;
+  }
+
+  .nav-btn-two {
+    width: 60px;
+  }
+
+  .navbar-nav {
+    gap: 30px !important;
+  }
+}
+
+@media (min-width : 1400px) {
+  .navbar {
+    margin-top: 45px !important;
+  }
+
+  .navbar-brand {
+    font-size: 40px;
+  }
+
+  .nav-link {
+    font-size: 22px;
+  }
+
+  .navbar-nav {
+    gap: 55px !important;
+  }
+}
+
+@media (min-width : 1600px) {
+  .navbar {
+    margin-top: 57px !important;
+  }
+
+  .navbar-brand {
+    font-size: 40px;
+  }
+
+  .nav-link {
     font-size: 24px;
-    text-align: center;
-    background-color: transparent;
   }
-  button:first-child:hover {
-    background-color: #eee;
-  }
-  button:last-child {
+
+  .nav-btn-two {
+    height: 77px;
     width: 83px;
-    aspect-ratio: 83/77;
-    background-color: #fad725;
-    color: #212528;
-    border: none;
-    border-radius: 4px;
   }
 
-  button:last-child:hover {
-    border: 1px solid #212528;
-    background-color: #fad725;
+  .navbar-nav {
+    gap: 52px !important;
   }
 }
 
-@media (max-width: 1650px) {
-  .container-fluid {
-    width: 95%;
+@media (min-width : 1900px) {
+  .container-fluid{
+    padding: 0;
   }
-  .navbar-nav {
-    margin: auto;
-    width: 100%;
-    max-width: 731px;
-  }
-  div.d-flex {
-    button:first-child {
-      width: 100%;
-      padding: 2%;
-    }
-    button:last-child {
-      width: 30%;
-    }
-  }
-}
 
-@media (max-width: 991px) {
   .navbar-nav {
-    margin-left: 0;
-  }
-  div.d-flex {
-    button:first-child {
-      width: 190px;
-    }
-    button:last-child {
-      width: 75px;
-    }
+    margin-left: 340px !important;
   }
 }

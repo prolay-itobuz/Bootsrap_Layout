@@ -1,16 +1,19 @@
 section.plans {
   background-color: #fafafa;
   height: 858px;
+
   div.plan {
     width: 100%;
     max-width: 1167px;
     margin: auto;
     text-align: center;
+
     h2 {
       padding-top: 53px;
       margin-bottom: 9px;
       @include heading;
     }
+
     p {
       font-size: 17px;
       color: #828282;
@@ -21,73 +24,106 @@ section.plans {
       display: flex;
       justify-content: space-between;
       gap: 25px;
+
       div.plan-card {
         width: 372px;
         height: 523px;
         padding: 0 58px;
         margin: auto auto;
-        padding-top: 65px;
+        border-radius: 4px;
+        padding-top: 67px;
+        transition: all 500ms;
         background-color: #ffffff;
+
         p {
-          color: #6f77f1;
+          color: #6f77f1 !important;
           font-size: 22px;
           font-weight: 500;
           margin-bottom: 34px;
         }
+
         img {
-          margin-bottom: 28px;
+          margin-bottom: 30px;
         }
+
         ul {
           list-style: none;
           padding: 0;
           display: flex;
           flex-direction: column;
-          gap: 10px;
-          margin-bottom: 42px;
+          gap: 11px;
+          margin-bottom: 44px;
+
           li {
             font-size: 17px;
             font-weight: 400;
             color: #828282;
           }
         }
+
         button {
           width: 127px;
-          padding: 11px 22px;
+          padding: 11px 20px;
           font-size: 14px;
           font-weight: 500;
           border: 1px solid #212528;
           background-color: transparent;
           border-radius: 2px;
         }
-        button:hover{
+
+        button:hover {
           background-color: #ced1d6;
         }
+
       }
+
+      div.plan-card:hover {
+        box-shadow: 0px 26px 42px 0px #02160514;
+        transition: all 500ms;
+      }
+
       div.plan-card:nth-child(2) {
         background: url(./assests/images/background/plan.png);
         background-position: center;
         background-repeat: no-repeat;
+        border-radius: 4px;
         background-size: 140%;
         color: #ffffff;
         height: 581px;
-        padding-top: 92px;
+        padding-top: 95px;
+
         p {
-          color: #ffffff;
+          color: #ffffff !important;
         }
+
         ul {
           li {
-            color: #ffffff;
+            color: #ffffff !important;
           }
         }
+
         button {
           background-color: #fad725;
           border: none;
           border-radius: 2px;
         }
-        button:hover{
-          border: 1px solid #212528;
+
+        button:hover {
+          background-color: rgb(255, 153, 0) !important;
+          transition: all 500ms;
         }
       }
+    }
+  }
+}
+
+
+
+@media (min-width:1900px) {
+  .plan {
+    padding: 0px !important;
+    h2 {
+      padding-top: 60px !important;
     }
   }
 }
@@ -95,17 +131,18 @@ section.plans {
 @media (max-width: 1200px) {
   section.plans {
     div.plan {
-      width: 90%;
       div.plan-cards {
         justify-content: space-evenly;
         gap: 20px;
         width: 100%;
         margin: auto;
+
         div.plan-card {
           width: 100%;
           padding-left: 10px;
           padding-right: 10px;
         }
+
         div.plan-card:nth-child(2) {
           width: 100%;
           height: 523px;
@@ -126,18 +163,22 @@ section.plans {
         font-size: 32px;
         padding: 0px;
       }
-      p{
+
+      p {
         margin: 0px;
       }
+
       div.plan-cards {
         flex-direction: column;
 
         gap: 10px;
+
         div.plan-card {
           width: 100%;
           height: auto;
           padding: 5% 2%;
         }
+
         div.plan-card:nth-child(2) {
           height: auto;
           padding: 5% 2%;

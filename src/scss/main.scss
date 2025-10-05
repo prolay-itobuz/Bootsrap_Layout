@@ -3,7 +3,31 @@
 
 * {
   box-sizing: border-box;
+  color: #212528 !important;
 }
+
+.border-primary{
+  border-color: #212528 !important;
+}
+
+.bg-warning{
+  background-color: #FAD725 !important;
+}
+
+.text-secondary{
+  color: #727272 !important;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.fs-6{
+  font-size: 24px !important;
+}
+
+.text-blue{
+  color: #6f77f1 !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
